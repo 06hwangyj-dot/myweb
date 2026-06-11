@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web poem</title>
+        <meta name="viewport" content="user-scalable=no,
+        initial-scale=1, maximum=1">
+        <style>
+            * { margin: 10px; padding: 0; }
 
+            #container {
+                background: linear-gradient(to bottom,
+                rgba(30,87,153,1) 0%,
+                 rgba(41,137,216,1) 50%,
+                 rgba(32,124,202,1) 51%,
+                 rgba(125,185,232,1) 100%);
+                background-color: rgb(20, 33, 101);
+                width: 600px; height: 500px;
+                position: absolute;
+                left: 50%; top: 50%;
+                padding: 70px;
+                border-radius: 20px;
+                margin-left: -300px;
+                margin-top: -250px;
+            }
+    
+            .font_OngleipKonkon { font-family: 'OngleipKonkon', self }
+            .font_center { text-align: center; }
+            .poem_title {
+                font-size: 55px;
+                color: white;
+                text-align: center;
+            }
+            .poem_name { 
+                font-size: 30px;
+                color: white;
+                text-align: right;
+            }
+            .poem {
+                font-size: 25px;
+                color: white;
+                text-align: center;
+            }
+
+            @font-face {
+                font-family: 'OngleipKonkon';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+                font-weight: normal;
+                font-display: swap;
+            }
+
+            @media screen {
+                body { background-color: white; }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="container" class="font_OngleipKonkon">
+            <h1 class="poem_title">서시</h1>
+            <h2 class="poem_name">윤동주</h2>
+            <br>
+            <br>
+            <div class="poem">
+                <p>죽는 날까지 하늘을 우러러한 점 부끄럼이 없기를,</p><br>
+                <p>잎새에 이는 바람에도나는 괴로워했다.</p><br>
+                <p>별을 노래하는 마음으로</p><br>
+                <p>모든 죽어가는 것을 사랑해야지</p><br>
+                <p>그리고 나한테 주어진 길을</p><br>
+                <p>걸어가야겠다.</p><br>
+                <p>오늘 밤에도 별이 바람에 스치운다.</p>
+            </div>
+        </div>
+    </body>
+</html>
