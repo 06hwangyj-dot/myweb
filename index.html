@@ -5,8 +5,8 @@
         <meta name="viewport" content="user-scalable=no,
         initial-scale=1, maximum=1">
         <style>
-            * { margin: 10px; padding: 0; }
-
+            * { margin: 0; padding: 0; }
+            
             #container {
                 background: linear-gradient(to bottom,
                 rgba(30,87,153,1) 0%,
@@ -14,13 +14,12 @@
                  rgba(32,124,202,1) 51%,
                  rgba(125,185,232,1) 100%);
                 /*background-color: rgb(20, 33, 101);*/
-                width: 600px; height: 500px;
-                position: absolute;
-                left: 50%; top: 50%;
-                padding: 70px;
+                width: 60%;
+                max-width: 700px;
+                min-height: 250px;
+                padding: 30px;
                 border-radius: 20px;
-                margin-left: -300px;
-                margin-top: -250px;
+                margin: 30px auto;
             }
     
             .font_OngleipKonkon { font-family: 'OngleipKonkon', self }
@@ -48,8 +47,20 @@
                 font-display: swap;
             }
 
-            @media screen {
-                body { background-color: white; }
+            @media screen and (max-width: 767px) {
+                body {
+                    background-color: white;
+                    padding-top:30px;
+                }
+
+                #container {
+                    width: 90%;
+                    padding: 30px;
+                }
+
+                .poem_title { font-size: 30px; }
+                .poem_name { font-size: 20px; }
+                .poem { font-size: 15px; }
             }
             
         </style>
@@ -62,7 +73,8 @@
             <br>
             <div class="poem">
                 <p>죽는 날까지 하늘을 우러러한 점 부끄럼이 없기를,</p><br>
-                <p>잎새에 이는 바람에도나는 괴로워했다.</p><br>
+                <p>잎새에 이는 바람에도</p><br>
+                <p>나는 괴로워했다.</p><br>
                 <p>별을 노래하는 마음으로</p><br>
                 <p>모든 죽어가는 것을 사랑해야지</p><br>
                 <p>그리고 나한테 주어진 길을</p><br>
